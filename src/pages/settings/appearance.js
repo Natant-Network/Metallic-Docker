@@ -103,12 +103,33 @@ function Appearance() {
         <ThemeOption type="jungle">
           <Obfuscate>Jungle</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="connection">
+          <Obfuscate>Connection</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="dune">
+          <Obfuscate>Dune</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="dracula">
+          <Obfuscate>Dracula</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="fracital">
+          <Obfuscate>Fracital</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="simple">
           <Obfuscate>Simple</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="nebula">
+          <Obfuscate>Nebula</Obfuscate>
         </ThemeOption>
         <ThemeOption type="tsunami">
           <Obfuscate>Tsunami</Obfuscate>
         </ThemeOption>
+        { localStorage.getItem("hub") === "true"  ? (
+        <ThemeOption type="hub">
+          <Obfuscate>Hub</Obfuscate>
+        </ThemeOption>
+        ) : ""
+        }
       </div>
       <div className="optiontitle">
         <Obfuscate>Background</Obfuscate>
@@ -120,6 +141,8 @@ function Appearance() {
         <BackgroundOption type="blocks">Blocks</BackgroundOption>
         <BackgroundOption type="triangles">Triangles</BackgroundOption>
         <BackgroundOption type="balls">Balls</BackgroundOption>
+        <BackgroundOption type="bubbles">Bubbles</BackgroundOption>
+        <BackgroundOption type="sus">Sus</BackgroundOption>
       </div>
     </>
   );
